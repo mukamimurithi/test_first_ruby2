@@ -6,9 +6,14 @@ def subtract(c,d)
   c-d
 end
 
-def sum(a=[])
+def sum(array)#sum of an empty array
   total = 0
-  a.inject(0) {|sum,x| sum + x.to_i}
+  if array.empty?
+    0
+  else
+    array.each {|element| total = total +element }
+    total
+  end
 end
 
 def multiply(a,b)
