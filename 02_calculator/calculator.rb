@@ -23,10 +23,18 @@ def power(a,d)
   a**d
 end
 
-def factorial(n)
-if n==0
-  1
-else
-  n * factorial(n-1)
-end
+#def factorial(n)
+#if n==0
+ # 1
+#else
+  #n * factorial(n-1)
+#end
+#end
+def factorial(number)
+  total=1
+  return 1 if number ==0
+  number.downto(2) do |n|
+    total= total *n
+  end
+  total
 end
