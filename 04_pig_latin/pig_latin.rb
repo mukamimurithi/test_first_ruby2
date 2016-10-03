@@ -1,3 +1,3 @@
 def translate(fruits)
- fruits = "appleay"
+  appleay
 end
